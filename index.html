@@ -2,23 +2,22 @@
 <html>
 <head>
   <title>해외선물 코비</title>
+</head>
+<body>
   <style>
-
-     body {
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-            background-color:#141414;
-        }
-       img {
-            width: 100%;
-            vertical-align : top;
-        }
-
-       
-        
+    body {
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+          background-color:#141414;
+      }
+      img {
+          width: 100%;
+          vertical-align : top;
+      }
     /* PC 화면에서만 보이도록 스타일링 */
     .pc-image {
+      width: 100%;
       display: block;
     }
     
@@ -38,11 +37,18 @@
       }
     }
   </style>
-</head>
-<body>
-  <a href="https://open.kakao.com/o/grf7Jekf" target="blank">
-  <img class="pc-image" src="covy randing.png" alt="PC Image">
-  <img class="mobile-image" src="covy randing mb.png" alt="Mobile Image">
-  </a>
+ <img class="pc-image" src="covy randing.png" usemap="#image-map">
+ <img class="mobile-image" src="covy randing mb.png" usemap="#image-map-mb">
+
+ <map name="image-map">
+     <area target="_blank" alt="" title="" href="https://open.kakao.com/o/grf7Jekf" coords="634,220,944,284" shape="rect">
+     <area target="_blank" alt="" title="" href="https://open.kakao.com/o/sFYVfxWf" coords="872,1721,1268,1793" shape="rect">
+ </map>
+
+ <map id="image-map-mb">
+  <area shape="rect" alt="" title="" coords="445,227,785,299" href="https://open.kakao.com/o/grf7Jekf" target="_blank" />
+  <area shape="rect" alt="" title="" coords="258,2460,958,2607" href="https://open.kakao.com/o/sFYVfxWf" target="_blank" />
+</map>
+
 </body>
 </html>
