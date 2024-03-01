@@ -1,62 +1,56 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-  <title>해외선물 코비</title>
+  <title>해외선물코비</title>
+    <style>
+        html{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            background-color: #3d0101;
+        }
 
-  
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .main {
+            width: 100%
+        }
+
+        @media all and (min-width: 1000px) {
+            .main {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/ios-orientationchange-fix.min.js"></script>
+
 </head>
+
 <body>
-  <style>
-    body {
-          margin: 0px;
-          padding: 0px;
-          position: relative;
-          background-color:#141414;
-      }
-      img {
-          width: 100%;
-          vertical-align : top;
-      }
-    /* PC 화면에서만 보이도록 스타일링 */
-    .pc-image {
-      width: 100%;
-      display: block;
-    }
-    
-    /* 모바일 화면에서만 보이도록 스타일링 */
-    .mobile-image {
-      display: none;
-    }
-    
-    /* 모바일 화면에 대한 미디어 쿼리 */
-    @media only screen and (max-width: 1000px) {
-      .pc-image {
-        display: none;
-      }
-    
-      .mobile-image {
-        display: block;
-      }
-    }
-  </style>
- 
- <script src="./js/jquery.min.js"></script>
- <script src="./js/jquery.rwdImageMaps.min.js"></script>
- <script src="./js/ios-orientationchange-fix.min.js"></script>
- 
- <img class="pc-image" src="covy randing.png" usemap="#image-map">
- <img class="mobile-image" src="covy randing mb.png" usemap="#image-map-mb">
+    <div class="main">
+        <img class="pc-image" src="covy randing mb.png" usemap="#image-map">
 
- <map name="image-map">
-     <area target="_blank" alt="1" title="1" href="https://open.kakao.com/o/grf7Jekf" coords="634,220,944,284" shape="rect">
-     <area target="_blank" alt="2" title="2" href="https://open.kakao.com/o/sFYVfxWf" coords="872,1721,1268,1793" shape="rect">
- </map>
+        <map name="image-map">
+            <area target="" alt="1" title="1" href="https://open.kakao.com/o/grf7Jekf" coords="451,233,778,291" shape="rect">
+            <area target="" alt="2" title="2" href="https://open.kakao.com/o/sFYVfxWf" coords="252,3038,951,3148" shape="rect">
+        
+           
+        </map>
+    </div>
 
- <map id="image-map-mb">
-  <area target="_blank" alt="1" title="1" href="https://open.kakao.com/o/grf7Jekf" coords="451,233,778,291" shape="rect" />
-  <area target="_blank" alt="2" title="2" href="https://open.kakao.com/o/sFYVfxWf"  coords="252,3038,951,3148" shape="rect" />
-</map>
-<script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
+    <script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
     <script>
         (function ($) {
             $(document).ready(function (e) {
@@ -65,4 +59,5 @@
         })(jQuery);
     </script>
 </body>
+
 </html>
